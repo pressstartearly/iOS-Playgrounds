@@ -24,10 +24,22 @@
                                     <action selector="howTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWn-sz-zkQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv8-BZ-rog" userLabel="2">
+                                <rect key="frame" x="244" y="240" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2" image="money">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="blw-dl-3Jj"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzY-Vc-aHU" userLabel="3">
                                 <rect key="frame" x="20" y="417" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="3" image="money"/>
+                                <state key="normal" title="3" image="money">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLU-e6-pQI"/>
                                 </connections>
@@ -35,7 +47,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-iC-aMH" userLabel="1">
                                 <rect key="frame" x="20" y="239" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="1" image="money"/>
+                                <state key="normal" title="1" image="money">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBE-Qs-kZM"/>
                                 </connections>
@@ -43,15 +57,19 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0Z-8f-yFI" userLabel="4">
                                 <rect key="frame" x="244" y="417" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="4" image="money"/>
+                                <state key="normal" title="4" image="money">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMC-4D-Ooq"/>
+                                    <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1I-9E-Puf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuE-7F-LAk" userLabel="5">
                                 <rect key="frame" x="20" y="597" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="5" image="money"/>
+                                <state key="normal" title="5" image="money">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b97-hk-sWs"/>
                                 </connections>
@@ -59,7 +77,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-b3-v8w" userLabel="6">
                                 <rect key="frame" x="244" y="597" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="6" image="money"/>
+                                <state key="normal" title="6" image="money">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6f-N4-Ijf"/>
                                 </connections>
@@ -68,25 +88,27 @@
                                 <rect key="frame" x="87" y="44" width="240" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv8-BZ-rog" userLabel="2">
-                                <rect key="frame" x="244" y="240" width="150" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Winnings: $0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Py-d0-eSq">
+                                <rect key="frame" x="119" y="768" width="176" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2" image="money"/>
-                                <connections>
-                                    <action selector="doScratchOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="blw-dl-3Jj"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.73359483479999998" blue="0.3938321769" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="winningsLabel" destination="3Py-d0-eSq" id="omH-s5-fLh"/>
                         <outletCollection property="scratchButton" destination="Lyo-iC-aMH" collectionClass="NSMutableArray" id="gwb-LN-Xpk"/>
                         <outletCollection property="scratchButton" destination="zzY-Vc-aHU" collectionClass="NSMutableArray" id="jcW-EU-vq4"/>
                         <outletCollection property="scratchButton" destination="dv8-BZ-rog" collectionClass="NSMutableArray" id="VRf-Ef-chd"/>
-                        <outletCollection property="scratchButton" destination="A0Z-8f-yFI" collectionClass="NSMutableArray" id="BrM-Ft-Keg"/>
                         <outletCollection property="scratchButton" destination="DuE-7F-LAk" collectionClass="NSMutableArray" id="OXk-iQ-fxg"/>
                         <outletCollection property="scratchButton" destination="1NH-b3-v8w" collectionClass="NSMutableArray" id="S7d-TR-dQm"/>
+                        <outletCollection property="scratchButton" destination="A0Z-8f-yFI" collectionClass="NSMutableArray" id="wSa-b0-BXR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,6 +119,9 @@
     <resources>
         <image name="cashmoney" width="200" height="200"/>
         <image name="money" width="300" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
