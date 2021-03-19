@@ -3,7 +3,7 @@
 //  homework6
 //
 //  Created by Caleb Chapman on 3/18/21.
-//
+//  CSC308
 
 import UIKit
 
@@ -48,19 +48,28 @@ class ViewController: UIViewController {
     
     // Checks to see if the selected item is a match. Then displays popups accordingly
     @IBAction func imageSelected(_ sender: UIButton) {
-        
         // Automatically assume a failure
-        var alertController = UIAlertController(title: "Test Failed!", message: "You must be a robot!", preferredStyle: UIAlertController.Style.alert)
+        var alertController = UIAlertController(title: "Test Failed!", message: "You MUST BE a robot!", preferredStyle: UIAlertController.Style.alert)
+        
+        // Sets up image view for alert
+        var imageView = UIImageView(frame: CGRect(x: 210, y: 15, width: 50, height: 50))
+        imageView.image = UIImage(named: "robot")
         
         // changes the alertController to test passed if it was correct
         if allImages["\(currentCategory)"]!.contains(sender.currentBackgroundImage!) {
-            alertController = UIAlertController(title: "Test Passed!", message: "You are not a robot!", preferredStyle: UIAlertController.Style.alert)
+            alertController = UIAlertController(title: "Test Passed!", message: "You are NOT a robot!", preferredStyle: UIAlertController.Style.alert)
+            imageView = UIImageView(frame: CGRect(x: 210, y: 20, width: 50, height: 40))
+            imageView.image = UIImage(named: "human")
         }
         
         // Displays the popup
-        let defaultAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: {(alertAction: UIAlertAction) in self.loadImages()})
+        let defaultAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {(alertAction: UIAlertAction) in self.loadImages()})
         
+        // Adds the action
         alertController.addAction(defaultAction)
+        
+        // Adds image
+        alertController.view.addSubview(imageView)
         
         present(alertController, animated: true, completion: nil)
     }
@@ -90,10 +99,8 @@ class ViewController: UIViewController {
         
         // Sets the "last" button in the collection, which has been shuffled to a random image in the random category that was just selected
         imageChoiceCollection.last?.setBackgroundImage((allImages["\(randomCategory)"]?.randomElement())!, for: UIControl.State.normal)
-        
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // onload we will select a random category
